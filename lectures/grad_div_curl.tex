@@ -1,0 +1,81 @@
+%-*- coding: UTF-8 -*-
+% grad_div_curl.tex
+% 梯度散度和旋度
+\documentclass[UTF8]{ctexart}  
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+% 在maketitle部分输出出来
+\title{梯度、散度和旋度小结}
+\author{陈斯杰}
+\date{\today}
+
+\bibliographystyle{plain}  %参考文献格式
+\newtheorem{deff}{定义}
+\newtheorem{thm}{定理}
+
+
+% 前面都是导言区，后面是正文区，正文区才是直接输出的部分
+\begin{document}
+	\maketitle
+	\begin{abstract}
+	\zihao{-4} \kaishu
+	这是一篇关于梯度、散度和旋度的一篇小总结
+	\end{abstract}
+	
+	
+	\tableofcontents
+	\section{梯度}
+		\subsection{二元函数情形}
+		\begin{deff}
+			二元函数的梯度是这样一个向量：其方向是这点的方向导数取最大值的方向，其模就是方向导数的最大值
+			\begin{align*}
+			\textbf{grad}\ f(x_0,y_0)&=\nabla f(x_0,y_0)\\
+									 &=f_x(x_0,y_0) \textbf{i} + f_y(x_0,y_0) \textbf{j}\\
+									 &=(f_x(x_0,y_0), f_y(x_0,y_0))\\
+			\end{align*}
+		
+		\end{deff}
+	
+		\subsection{三元函数情形}
+			三元函数与二元函数类似，$\nabla f$是这样一个向量：其方向是这点的方向导数取最大值的方向，其模就是方向导数的最大值
+			\begin{align*}
+			\textbf{grad}\ f(x_0,y_0,z_0)&=\nabla f(x_0,y_0,z_0)\\
+									 &=f_x(x_0,y_0,z_0) \textbf{i} + f_y(x_0,y_0,z_0) \textbf{j} + f_z(x_0,y_0,z_0) \textbf{k}\\
+									 &=(f_x(x_0,y_0), f_y(x_0,y_0), , f_z(x_0,y_0))\\
+			\end{align*}
+			对于函数等值面$f(x,y,z)=c$上的一点$(x_0,y_0,z_0)$, \\
+			梯度\ $\nabla f(x_0,y_0,z_0)$的方向就是等值面在这一点的法线的方向n，\\
+			梯度的模\ $||\nabla f(x_0,y_0,z_0)||$就是函数沿着法线方向的方向导数
+			$\frac{\partial f}{\partial n}$
+		
+		\subsection{Nabla算子}
+			$\nabla= \frac{\partial }{\partial x} \textbf{i}
+					+\frac{\partial }{\partial y} \textbf{j}			
+					+\frac{\partial }{\partial z} \textbf{k}
+			$
+			称为三维的向量微分算子，或者Nabla算子\\			
+ 			 
+			$\nabla f= \frac{\partial f}{\partial x} \textbf{i}
+					+\frac{\partial f}{\partial y} \textbf{j}			
+					+\frac{\partial f}{\partial z} \textbf{k}
+			$
+		\subsection{梯度的场论意义}
+			\begin{deff}
+			建立一个对应关系：对于空间区域G内每个点M，都有一个确定的\textbf{标量}$f(M)$与之对应，则称在G中建立了一个数量场。(如温度场、密度场)
+			\end{deff}
+			
+			\begin{deff}
+			建立一个对应关系：对于空间区域G内每个点M，都有一个确定的\textbf{向量}$F(M)$与之对应，则称在G中建立了一个向量场。(如速度场、力场)
+			  
+			可表示为$F(M)=P(M) \textbf{i}+Q(M) \textbf{j}+R(M) \textbf{k}$
+			\end{deff}
+  
+  
+			若$F(M)= \nabla f(M)$,则称$F(M)$为势场，$f(M)$为$F(M)$的势函数。\\
+			例如引力势$\frac{m}{r}$的梯度$\textbf{grad}\frac{m}{r}$称为引力场\\
+			一孤立点电荷Q，在距Q为r的A点电势为$\phi=k \frac{Q}{r}$\\
+			$\frac{\partial{\phi}}{\partial{r}}= $
+			
+	\bibliography{math} %提示从文献数据库math中获得文献信息，打印参考文献表
+\end{document}
