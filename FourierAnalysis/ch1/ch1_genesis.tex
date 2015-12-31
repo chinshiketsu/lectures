@@ -25,7 +25,7 @@ in detail by supplementing the background knowledge.
 			\label{fig:xiantu}
 		\end{figure}
 		
-		\noindent		
+		\noindent
 		Newton's law produces a 2nd order ODE
 
 		\begin{equation}
@@ -37,7 +37,7 @@ in detail by supplementing the background knowledge.
 		\begin{equation}
 			y''(t)+c^2y(t)=0
 		\end{equation}				
-		
+		\noindent
 		Equation(2)	is a linear homogeneous 2nd-order differential equation(二阶常系数线性方程).
 		For a general case $y''+py'+qy=0$, we first solve the characteristic equation
 		$\lambda^2+p\lambda+q=0$ and get the characteristic roots: $\lambda_1, \lambda_2$.
@@ -55,8 +55,47 @@ in detail by supplementing the background knowledge.
 		$y=(C_1+C_2x)e^{\lambda_1 x}$ \\
 		
 		$\lambda_1,\lambda_2=\alpha\pm i\beta$ &
-		$y_1=e^{\alpha x}cos\beta x, y_2=e^{\alpha x}sin\beta x$ &
-		$y=e^{\alpha x}(C_1 cos\beta x +C_2 sin\beta x)$ \\
+		$y_1=e^{\alpha x}\cos\beta x, y_2=e^{\alpha x}\sin\beta x$ &
+		$y=e^{\alpha x}(C_1 \cos\beta x +C_2 \sin\beta x)$ \\
 		\hline
 		\end{tabular}
+    	\  \\
+		The corresponding characteristic equation of (2) is $\lambda^2 + c^2=0$, and the roots
+		are $\lambda=\pm ic$; therefore, the general solution of (2) is 
+		\begin{equation}
+			y(t)=a\cos ct+b\sin ct
+		\end{equation}
+		and it's 1st order derivative is
+		\begin{equation}
+			y'(t)=-ac\sin ct +bc\cos ct
+		\end{equation}
+		To get the particular solution, we need 2 initial condition: $y(0)\ and\ y'(0)$.\\
+		$y(0)=a,\ y'(0)=bc$, thereby getting the particular solution:
+		\begin{equation}
+			y(t)=y'(0)\cos ct + \frac{y'(0)}{c} \sin ct
+		\end{equation}
+	\subsection{Standing Wave 驻波}
+		\begin{figure}[ht]
+			\centering
+			\includegraphics[width=5cm]{standingwave.png}
+			\caption{驻波}
+			\label{fig:xiantu}
+		\end{figure}
+		\noindent
+		驻波是两个振幅、波长、频率都相同的正弦波，相向而行形成的。
+		驻波的波形并不前进，波形上的每个质点皆作Simple Harmonic Motion(简谐运动)。\\
+		We use $u(x,t)$ to describe the standing wave. The nature of standing waves suggest 
+		the mathematical idea of "separation of variables".\\
+		\noindent
+		As standing waves do not travel, every mass point just oscillates around the balance position 
+		at different amplitudes. So the equation of standing wave movement can be expressed as:
+		\begin{equation}
+		u(x,t)=\phi (x) \psi(t)
+		\end{equation}
+		where:\\
+		 	$\phi(x)$ represents the amplitute of the mass points at location x. \\
+		 	$\psi(t)$ is a oscillating factor, which makes every mass point 
+			oscillates within the amplitute $\phi(x)$.
+		
+		
 \end{document}
