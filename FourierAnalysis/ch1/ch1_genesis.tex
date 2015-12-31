@@ -4,6 +4,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{geometry}
+
 
 \author{陈斯杰}
 \title{Chapter1. THE GENESIS OF FOURIER ANALYSIS}
@@ -22,7 +24,7 @@ in detail by supplementing the background knowledge.
 			\centering
 			\includegraphics[width=5cm]{idealspring.png}
 			\caption{简谐运动谐振子}
-			\label{fig:xiantu}
+			\label{fig:simple_harmonic}
 		\end{figure}
 		
 		\noindent
@@ -60,6 +62,7 @@ in detail by supplementing the background knowledge.
 		\hline
 		\end{tabular}
     	\  \\
+    	\ \\
 		The corresponding characteristic equation of (2) is $\lambda^2 + c^2=0$, and the roots
 		are $\lambda=\pm ic$; therefore, the general solution of (2) is 
 		\begin{equation}
@@ -79,7 +82,7 @@ in detail by supplementing the background knowledge.
 			\centering
 			\includegraphics[width=5cm]{standingwave.png}
 			\caption{驻波}
-			\label{fig:xiantu}
+			\label{fig:standingWave}
 		\end{figure}
 		\noindent
 		驻波是两个振幅、波长、频率都相同的正弦波，相向而行形成的。
@@ -96,6 +99,40 @@ in detail by supplementing the background knowledge.
 		 	$\phi(x)$ represents the amplitute of the mass points at location x. \\
 		 	$\psi(t)$ is a oscillating factor, which makes every mass point 
 			oscillates within the amplitute $\phi(x)$.
+			  
+		拨动两端固定并拉紧的弦，机械波经过两固定端的反射，反射的波叠加可形成驻波。
+		  
+		下面推导弦上的驻波方程：
+		\begin{figure}
+			\centering
+			\includegraphics[width=7cm]{vibratingString.png}
+			\caption{A Vibrating String}
+			\label{fig:vibStr}
+		\end{figure}		
+  		
+		将固定弦分为$N$段，弦上的每一段的端点坐标为$(x_n,y_n)$	
+		\begin{equation}
+		    \left\{
+			\begin{aligned}
+				&x_n =nh=n\frac{L}{N} \\
+				&y_n(t) =u(x_n,t) \\
+			\end{aligned}
+			\right.
+		\end{equation}
+  		
+		每一段的受力分析如下:	
+		\begin{figure}[ht]
+			\centering
+			\includegraphics[width=7cm]{vibratingStringF.png}
+			\caption{A Vibrating String}
+			\label{fig:vibStrF}
+		\end{figure}
 		
-		
+		\begin{figure}[ht]
+			\centering
+			\includegraphics[width=11cm]{tension.png}
+			\caption{Force Analysis}
+			\label{fig:tens}
+		\end{figure}	
+		The vertical force
 \end{document}
