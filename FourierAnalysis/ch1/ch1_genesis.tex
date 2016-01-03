@@ -103,14 +103,11 @@ in detail by supplementing the background knowledge.
 		拨动两端固定并拉紧的弦，机械波经过两固定端的反射，反射的波叠加可形成驻波。
 		  
 		下面推导弦上的驻波方程：
-		\begin{figure}
-			\centering
-			\includegraphics[width=7cm]{vibratingString.png}
-			\caption{A Vibrating String}
-			\label{fig:vibStr}
-		\end{figure}		
-  		
-		将固定弦分为$N$段，弦上的每一段的端点坐标为$(x_n,y_n)$	
+
+  		\noindent
+  		We subdivided the string into a large number $N$ of mass points, distributed 
+  		uniformly along the $x$-axis.\\
+  		Each particle's position is $(x_n,y_n)$	, where:
 		\begin{equation}
 		    \left\{
 			\begin{aligned}
@@ -119,20 +116,79 @@ in detail by supplementing the background knowledge.
 			\end{aligned}
 			\right.
 		\end{equation}
-  		
-		每一段的受力分析如下:	
+		
 		\begin{figure}[ht]
 			\centering
-			\includegraphics[width=7cm]{vibratingStringF.png}
+			\includegraphics[width=6cm]{vibratingString.png}
 			\caption{A Vibrating String}
+			\label{fig:vibStr}
+		\end{figure}		
+  		
+		There are two forces acted upon the particle by two neighbour particles;
+		i.e. the sum of forces on $(x_n,y_n)$ is $F_l+F_r$.\\
+		\begin{figure}[ht]
+			\centering
+			\includegraphics[width=6cm]{vibratingStringF.png}
+			\caption{Forces on the string's particle}
 			\label{fig:vibStrF}
 		\end{figure}
 		
-		\begin{figure}[ht]
+		
+		\noindent		  
+		Now we are going to illustrate why $F_r$ equals  $\tau\frac{(y_{n+1}-y_n)}{h}$. 
+		As the particle only oscillates in the y-direction, the horizontal net force is zero.\\		 
+		\begin{figure}[h]
 			\centering
 			\includegraphics[width=11cm]{tension.png}
 			\caption{Force Analysis}
 			\label{fig:tens}
 		\end{figure}	
-		The vertical force
+		
+		
+		\noindent
+		The y-direction force is the y-component of the tension $\tau$ between the particle and 
+		the next particle.\\
+		$F_r$ equals $\tau \sin\theta$ ($\theta$ is the angle between the tension and the horizontal line),
+		Considering $\theta$ is very small, we substitute $\sin\theta$ with $\tan\theta$.\\
+		Hence, $F_r$ approximately equals to $(\tau \tan\theta)= (\tau\frac{(y_{n+1}-y_n)}{h})$ 
+		
+		
+		
+		\noindent
+		The linear density of the string is $\rho$, so each particle's mass is $\rho h$
+		According to Newton's law $F=ma$, we derive the following equation.
+		
+		\begin{align*}
+		\rho h y_n''(t) &= F_l+F_r \\
+                        &= \tau\frac{\ y_{n+1}(t)-y_{n}(t)+y_{n-1}(t)-y_n(t)}{h} \\
+                        &= \tau\frac{\ u(x_n+h,t)-u(x_n,t)+u(x_n-h,t)-u(x_n,t)}{h}  \\
+                        &= \tau\frac{\ u(x_n+h,t)+u(x_n-h,t)-2u(x_n,t)}{h}  \\                        
+		\end{align*}
+		Let's take the limit of this equation's right side with respect to h,
+		\begin{align*}
+			\rho h y_n''(t) = \lim_{h\to 0}\tau\frac{\ u(x_n+h,t)+u(x_n-h,t)-2u(x_n,t)}{h} 
+		\end{align*}
+		\noindent
+		and move h to the right side, and use $u(x,t)$ notation to substitute $y{''}(t)$
+		\begin{equation}
+			\rho \frac{\partial^2 u}{\partial t^2} = \lim_{h\to 0}\tau\frac{\ u(x_n+h,t)+u(x_n-h,t)-2u(x_n,t)}{h^2} 
+		\end{equation}
+		\noindent
+		The right side is right the definition of 2nd order partial derivatives of $u$ with respect to $x$, 
+		so in short:
+		\begin{equation}
+			\frac{1}{c^2}\frac{\partial^2 u}{\partial t^2}=\frac{\partial^2 u}{\partial x^2},\ with\ c=\sqrt{\tau/\rho}
+		\end{equation}
+		This relation is known as 1-D wave equation, $c>0$ is called the \textbf{velocity} of the motion.\\
+		We can examine c's physical meaning using Dimensional Analysis (量纲分析).\\
+		The Unit of c is $(N \bullet \frac{kg}{m})^{0.5}=(kg \bullet m/s^2 \bullet \frac{kg}{m})^{0.5}=m/s$
+	\subsection{Solving Wave Equation}
+		For simplicity, we assume that $c=1$ and length of string $L=\pi$, so Equation (9) becomes
+		\begin{equation}
+			\frac{\partial^2 u}{\partial t^2} = \frac{\partial^2 u}{\partial x^2}\ (0\leqslant x \leqslant \pi,\ t\geqslant 0)
+		\end{equation}				
+		
+		\subsubsection{using travelling waves}
+		我们用$F(x)$来表示某一时刻的波形，$F(x+vt)$则表示$t$个时间后的波形（假设波向右移动）。
+		\subsubsection{using the superposition of standing waves}
 \end{document}
