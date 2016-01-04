@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  3 JAN 2016 14:25
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  4 JAN 2016 23:53
 entering extended mode
 **ch1_genesis.tex
-(E:\texsrc\gdc\FourierAnalysis\ch1\ch1_genesis.tex
+(E:\texsrc\readingNotes\FourierAnalysis\ch1\ch1_genesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (D:\devtool\CTEX\MiKTeX\tex\latex\ctex\ctexart.cls
@@ -776,7 +776,7 @@ Package ifvtex Info: VTeX not detected.
 \Gm@dimlist=\toks22
 
 (D:\devtool\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg))
-(E:\texsrc\gdc\FourierAnalysis\ch1\ch1_genesis.aux)
+(E:\texsrc\readingNotes\FourierAnalysis\ch1\ch1_genesis.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
@@ -950,7 +950,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--68
 
 [1
 
- <E:/texsrc/gdc/FourierAnalysis/ch1/idealspring.png>]
+ <E:/texsrc/readingNotes/FourierAnalysis/ch1/idealspring.png>]
 <standingwave.png, id=61, 150.5625pt x 165.61874pt>
 File: standingwave.png Graphic file (type png)
  <use standingwave.png>
@@ -959,7 +959,7 @@ Package pdftex.def Info: standingwave.png used on input line 83.
 Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
  family 'def' instead. on input line 88.
 
-[2 <E:/texsrc/gdc/FourierAnalysis/ch1/standingwave.png>]
+[2 <E:/texsrc/readingNotes/FourierAnalysis/ch1/standingwave.png>]
 <vibratingString.png, id=112, 258.2448pt x 153.6942pt>
 File: vibratingString.png Graphic file (type png)
 
@@ -979,54 +979,54 @@ File: tension.png Graphic file (type png)
 <use tension.png>
 Package pdftex.def Info: tension.png used on input line 142.
 (pdftex.def)             Requested size: 312.9803pt x 123.69069pt.
- [3 <E:/texsrc/gdc/FourierAnalysis/ch1/vibratingString.png> <E:/texsrc/gdc/Four
-ierAnalysis/ch1/vibratingStringF.png>] [4 <E:/texsrc/gdc/FourierAnalysis/ch1/te
-nsion.png>] [5]
-(E:\texsrc\gdc\FourierAnalysis\ch1\ch1_genesis.aux) ) 
+ [3 <E:/texsrc/readingNotes/FourierAnalysis/ch1/vibratingString.png> <E:/texsrc
+/readingNotes/FourierAnalysis/ch1/vibratingStringF.png>]
+[4 <E:/texsrc/readingNotes/FourierAnalysis/ch1/tension.png>] [5]
+(E:\texsrc\readingNotes\FourierAnalysis\ch1\ch1_genesis.aux) ) 
 Here is how much of TeX's memory you used:
  10580 strings out of 495354
- 163628 string characters out of 3183411
+ 163691 string characters out of 3183411
  208211 words of memory out of 3000000
  13375 multiletter control sequences out of 15000+200000
  29227 words of font info for 105 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  40i,9n,28p,850b,932s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/WINDOWS/Fonts/simsun.t
-tc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/
-simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
-S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C
-:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsu
-n.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fon
-ts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIN
-DOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc
-><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
-msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
-Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
-WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.
-ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts
+<C:/WINDOWS/Fonts
 /simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDO
 WS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><
 C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sims
-un.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fo
-nts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WI
-NDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.tt
+un.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fo
+nts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WI
+NDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.tt
 c><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
-imsun.ttc><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:
-/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/devtool/CTEX
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/devtool/CTEX/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi5.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mmi7.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/d
-evtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/devtool/CTEX/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/devtool/CTEX/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmr5.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb
-><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/devtool/
-CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/devtool/CTEX/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/pub
-lic/amsfonts/symbols/msam10.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsf
-onts/symbols/msbm10.pfb>
-Output written on ch1_genesis.pdf (5 pages, 598561 bytes).
+imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS
+/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:
+/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
+.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Font
+s/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIND
+OWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>
+<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
+sun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/F
+onts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/W
+INDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.t
+tf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/
+simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
+S/Fonts/simsun.ttc><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/dev
+tool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/devtool/CTEX/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/devtool/CTEX/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmmi5.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/devtoo
+l/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/devtool/CTEX/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr9.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:
+/devtool/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/devtool/CTEX
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/devtool/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/symbols/msam10.pfb><D:/devtool/CTEX/MiKTeX/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb>
+Output written on ch1_genesis.pdf (5 pages, 598473 bytes).
 PDF statistics:
  356 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
