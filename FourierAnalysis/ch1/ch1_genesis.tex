@@ -5,7 +5,8 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{geometry}
-
+\geometry{top=4cm,bottom=4cm}
+\renewcommand\figurename{Figure}
 
 \author{陈斯杰}
 \title{Chapter1. THE GENESIS OF FOURIER ANALYSIS}
@@ -77,36 +78,11 @@ in detail by supplementing the background knowledge.
 		\begin{equation}
 			y(t)=y'(0)\cos ct + \frac{y'(0)}{c} \sin ct
 		\end{equation}
-	\subsection{Standing Wave 驻波}
-		\begin{figure}[ht]
-			\centering
-			\includegraphics[width=5cm]{standingwave.png}
-			\caption{驻波}
-			\label{fig:standingWave}
-		\end{figure}
-		\noindent
-		驻波是两个振幅、波长、频率都相同的正弦波，相向而行形成的。
-		驻波的波形并不前进，波形上的每个质点皆作Simple Harmonic Motion(简谐运动)。\\
-		We use $u(x,t)$ to describe the standing wave. The nature of standing waves suggest 
-		the mathematical idea of "separation of variables".\\
-		\noindent
-		As standing waves do not travel, every mass point just oscillates around the balance position 
-		at different amplitudes. So the equation of standing wave movement can be expressed as:
-		\begin{equation}
-		u(x,t)=\phi (x) \psi(t)
-		\end{equation}
-		where:\\
-		 	$\phi(x)$ represents the amplitute of the mass points at location x. \\
-		 	$\psi(t)$ is a oscillating factor, which makes every mass point 
-			oscillates within the amplitute $\phi(x)$.
-			  
-		拨动两端固定并拉紧的弦，机械波经过两固定端的反射，反射的波叠加可形成驻波。
-		  
-		下面推导弦上的驻波方程：
-
+	\subsection{Wave Equation on String}
   		\noindent
+  		下面推导弦上的波动方程：\\
   		We subdivided the string into a large number $N$ of mass points, distributed 
-  		uniformly along the $x$-axis.\\
+  		uniformly along the $x$-axis. (See Figure 2)\\
   		Each particle's position is $(x_n,y_n)$	, where:
 		\begin{equation}
 		    \left\{
@@ -123,9 +99,9 @@ in detail by supplementing the background knowledge.
 			\caption{A Vibrating String}
 			\label{fig:vibStr}
 		\end{figure}		
-  		
+  		\noindent  
 		There are two forces acted upon the particle by two neighbour particles;
-		i.e. the sum of forces on $(x_n,y_n)$ is $F_l+F_r$.\\
+		i.e. the sum of forces on $(x_n,y_n)$ is $F_l+F_r$. (See Figure 3)\\
 		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=6cm]{vibratingStringF.png}
@@ -133,31 +109,26 @@ in detail by supplementing the background knowledge.
 			\label{fig:vibStrF}
 		\end{figure}
 		
-		
 		\noindent		  
 		Now we are going to illustrate why $F_r$ equals  $\tau\frac{(y_{n+1}-y_n)}{h}$. 
 		As the particle only oscillates in the y-direction, the horizontal net force is zero.\\		 
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=11cm]{tension.png}
+			\includegraphics[width=10cm]{tension.png}
 			\caption{Force Analysis}
 			\label{fig:tens}
 		\end{figure}	
 		
-		
 		\noindent
 		The y-direction force is the y-component of the tension $\tau$ between the particle and 
-		the next particle.\\
+		the next particle. (Figure 4)\\
 		$F_r$ equals $\tau \sin\theta$ ($\theta$ is the angle between the tension and the horizontal line),
 		Considering $\theta$ is very small, we substitute $\sin\theta$ with $\tan\theta$.\\
 		Hence, $F_r$ approximately equals to $(\tau \tan\theta)= (\tau\frac{(y_{n+1}-y_n)}{h})$ 
 		
-		
-		
 		\noindent
 		The linear density of the string is $\rho$, so each particle's mass is $\rho h$
 		According to Newton's law $F=ma$, we derive the following equation.
-		
 		\begin{align*}
 		\rho h y_n''(t) &= F_l+F_r \\
                         &= \tau\frac{\ y_{n+1}(t)-y_{n}(t)+y_{n-1}(t)-y_n(t)}{h} \\
@@ -182,6 +153,8 @@ in detail by supplementing the background knowledge.
 		This relation is known as 1-D wave equation, $c>0$ is called the \textbf{velocity} of the motion.\\
 		We can examine c's physical meaning using Dimensional Analysis (量纲分析).\\
 		The Unit of c is $(N \bullet \frac{kg}{m})^{0.5}=(kg \bullet m/s^2 \bullet \frac{kg}{m})^{0.5}=m/s$
+
+			
 	\subsection{Solving Wave Equation}
 		For simplicity, we assume that $c=1$ and length of string $L=\pi$, so Equation (9) becomes
 		\begin{equation}
@@ -191,4 +164,31 @@ in detail by supplementing the background knowledge.
 		\subsubsection{using travelling waves}
 		我们用$F(x)$来表示某一时刻的波形，$F(x+vt)$则表示$t$个时间后的波形（假设波向右移动）。
 		\subsubsection{using the superposition of standing waves}
+			\paragraph{Standing Wave 驻波}
+					驻波是两个振幅、波长、频率都相同的正弦波，相向而行形成的。
+					驻波的波形并不前进，波形上的每个质点皆作Simple Harmonic Motion(简谐运动)。
+					拨动两端固定并拉紧的弦，机械波经过两固定端的反射，反射的波叠加可形成驻波。\\
+					\begin{figure}[ht]
+						\centering
+						\includegraphics[width=4cm]{standingwave.png}
+						\caption{驻波}
+						\label{fig:standingWave}
+					\end{figure}
+					\newpage
+					\noindent
+					\\		
+					We use $u(x,t)$ to describe the standing wave. The nature of standing waves suggest 
+					the mathematical idea of "separation of variables" (分离变量的思想).\\
+					\noindent
+					As standing waves do not travel, every mass point just oscillates around the balance position 
+					at different amplitudes. So the equation of standing wave movement can be expressed as:
+					\begin{equation}
+						u(x,t)=\phi (x) \psi(t)
+					\end{equation}
+					where:\\
+					\begin{center}
+					 	$\phi(x)$ represents the amplitute of the mass points at location x. \\
+					 	$\psi(t)$ is a oscillating factor, which makes every mass point\\ 
+						oscillates within the amplitute $\phi(x)$.		
+					\end{center}
 \end{document}
