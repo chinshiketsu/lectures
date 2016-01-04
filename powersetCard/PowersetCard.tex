@@ -1,0 +1,53 @@
+\documentclass[UTF8,10pt,a4paper]{ctexart}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newtheorem{deff}{定义}
+
+\begin{document}
+\section{集合与其幂集不等势}
+	\subsection{幂集}
+		一个集合的所有子集构成的集族称为幂集。
+		 		 
+		集合$A$的幂集记作$P(A)$或者$2^A$
+	\subsection{等势}
+		\begin{deff}
+			双射(Bijection)，又称一一映射。
+              			
+			对于一个映射$f:A \mapsto B$，当且仅当：
+			 
+			对于$\forall b\in B$，存在唯一的$a\in A$满足$f(a)=b$ 时，
+			
+			我们称其为双射。
+		\end{deff}
+	
+		\begin{deff}
+			在集合$A$和集合$B$之间，如果能构建一个双射$f:A \mapsto B$，则称$A$和$B$等势。
+		\end{deff}
+
+	\subsection{证明：任意集合与该集合的幂集不等势}
+		\subsubsection{正式证明}
+			假设集合$A$与其幂集$P(A)$等势，那么存在一个双射$f:A \mapsto P(A)$。\\
+			设$B=\{a| a\in A\ \ and\ \ a\notin f(a) \}$，由于$B$中所有元素$a$都满足$a\in A$，所以$B$是$A$的子集。
+			 
+			根据幂集的定义：“幂集是一个集合所有子集的集族”， 所以 $B$是$P(A)$的一个元素，即$B \in P(A)$。
+			
+			由我们的假设，双射$f$使得存在唯一的一个元素$\ b\in A\ $满足$\ f(b)=B$。
+			
+			那么现在来看看$b$是否属于集合$B$:
+			
+			假如$b\in B$，$b$一定必须要集合$B$的定义：$b \notin f(b)$，而$f(b)=B$，从而推出$b \notin B$， 矛盾，所以不成立。
+			
+			假如$b\notin B$，把前面的推论$B=f(b)$代入,得：$b \notin f(b)$。然而这又使得$b$满足了$B$的定义
+			“$b\in A\ \ and\ b \notin f(b)$”，从而推出$b \in B$，矛盾，所以不成立。
+			
+			$b\in B$和$b\notin B$是两个互相矛盾的命题，不能同时为假，否则违反排中律。因此原假设“集合$A$与其幂集$P(A)$等势”不成立。
+			
+			证毕
+		\subsubsection{讲故事证明}
+			在数学王国Byteland里面，三拍干部领导班子出了一个点子：在生产队$A$和超生产队$P(A)$之间开展手拉手结对子活动。
+			超生产队
+\end{document}
